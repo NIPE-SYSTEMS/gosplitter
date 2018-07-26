@@ -4,6 +4,8 @@
 
 ![Screenshot](screenshot.png)
 
+This repository contains a channel splitter which broadcasts messages received from an input channel to a dynamic amount of output channels.
+
 ## Installation
 
     go get github.com/NIPE-SYSTEMS/gosplitter
@@ -17,7 +19,7 @@ function. To prevent memory leaks the remove function must be called when the ou
 Create splitter:
 
     input := make(chan interface{})
-    add := NewGenericSplitter(input, capacity)
+    add := NewSplitter(input, capacity)
 
 Add output channel:
 
