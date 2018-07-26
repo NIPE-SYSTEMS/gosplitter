@@ -1,6 +1,8 @@
-<center><h1>gosplitter</h1></center>
-<center><a href="https://travis-ci.org/NIPE-SYSTEMS/gosplitter"><img src="https://api.travis-ci.org/NIPE-SYSTEMS/gosplitter.svg?branch=master" alt="Travis CI" /></a></center>
-<center><img src="https://github.com/NIPE-SYSTEMS/gosplitter/raw/master/screenshot.png" alt="Screenshot" /></center>
+# gosplitter
+
+[![Travis CI](https://api.travis-ci.org/NIPE-SYSTEMS/gosplitter.svg?branch=master)](https://travis-ci.org/NIPE-SYSTEMS/gosplitter) [![GoDoc](https://godoc.org/github.com/NIPE-SYSTEMS/gosplitter?status.svg)](https://godoc.org/github.com/NIPE-SYSTEMS/gosplitter)
+
+![Screenshot](screenshot.png)
 
 ## Installation
 
