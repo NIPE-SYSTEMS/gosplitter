@@ -18,13 +18,17 @@ function. To prevent memory leaks the remove function must be called when the ou
 
 Create splitter:
 
-    input := make(chan interface{})
-    add := NewSplitter(input, capacity)
+```go
+input := make(chan interface{})
+add := NewSplitter(input, capacity)
+```
 
 Add output channel:
 
-    output, remove := add()
-    defer remove() // ensure that output gets removed
+```go
+output, remove := add()
+defer remove() // ensure that output gets removed
+```
 
 ## License
 
