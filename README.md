@@ -12,9 +12,7 @@ This repository contains a channel splitter which broadcasts messages received f
 
 ## Create a new splitter
 
-NewSplitter() creates a new splitter from a given input channel. It returns an add function that may be used for adding more
-outputs to the splitter. The add function returns a new output channel with the given capacity and a remove
-function. To prevent memory leaks the remove function must be called when the output channel is no longer needed.
+NewSplitter() creates a new splitter from a given input channel. It returns an add function that may be used for adding more outputs to the splitter. The add function returns a new output channel with the given capacity and a remove function. To prevent memory leaks the remove function must be called when the output channel is no longer needed.
 
 Create splitter:
 
@@ -28,6 +26,12 @@ Add output channel:
 ```go
 output, remove := add()
 defer remove() // ensure that output gets removed
+```
+
+Close the input channel when done:
+
+```go
+close(input) // will close output channel if it has not been removed yet
 ```
 
 ## License
