@@ -10,7 +10,7 @@ This repository contains a channel splitter which broadcasts messages received f
 
     go get github.com/NIPE-SYSTEMS/gosplitter
 
-## Cretae a new splitter
+## Create a new splitter
 
 NewSplitter() creates a new splitter from a given input channel. It returns an add function that may be used for adding more
 outputs to the splitter. The add function returns a new output channel with the given capacity and a remove
